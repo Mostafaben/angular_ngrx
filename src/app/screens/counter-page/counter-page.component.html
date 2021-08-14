@@ -1,0 +1,29 @@
+<div class="content">
+  <p>Counter: {{ count | async }}</p>
+  <div class="actions">
+    <button (click)="incrementCounter()">Increment</button>
+    <button (click)="decrementCounter()">Decrement</button
+    ><button (click)="resetCounter()">Reset</button>
+  </div>
+</div>
+
+<style>
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    width: 400px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .actions {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .actions button {
+    margin-left: 20px;
+  }
+</style>

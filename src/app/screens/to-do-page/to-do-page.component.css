@@ -1,0 +1,52 @@
+.page_container {
+  max-width: 1024px;
+  width: 1024px;
+  margin: 0px auto;
+}
+.input_container {
+  padding: 20px 0px;
+  display: flex;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_container button {
+  color: white;
+  background-color: blue;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 2px 2px 10px #eee;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition-duration: 200ms;
+  animation: createTodo 400ms;
+}
+.todo:hover {
+  transform: scale(0.99);
+  box-shadow: 0px 2px 4px #ddd;
+}
+
+@keyframes createTodo {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.clear_all {
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 8px 4px 0px auto;
+}
