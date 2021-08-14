@@ -1,0 +1,11 @@
+<div class="movie" [routerLink]="'/movies/' + movie.id">
+  <h3>{{ movie.name | uppercase }}</h3>
+  <p>{{ movie.description }}</p>
+  <div class="actors">
+    <div class="actor" *ngFor="let actor of movie.actors">
+      <img [src]="actor.imageUrl" />
+      <p>{{ actor.name }}</p>
+    </div>
+  </div>
+  <span>{{ movie.createdAt | date: "short" }}</span>
+</div>

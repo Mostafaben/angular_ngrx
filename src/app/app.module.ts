@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MoviesModule } from './movies/movies.module';
 import { CounterPageComponent } from './screens/counter-page/counter-page.component';
 import { ToDoPageComponent } from './screens/to-do-page/to-do-page.component';
 import counterReducer from './state/reducers/counter.reducer';
@@ -20,6 +21,7 @@ import todoReducer from './state/reducers/todo.reducer';
       counter: counterReducer,
       todos: todoReducer,
     }),
+    MoviesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
